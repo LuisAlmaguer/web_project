@@ -7,38 +7,41 @@
   margin: 0 auto;
   /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  /* background-color: #F2F2F2; */
 }
 
 .header {
-  height: 100vh;
+  width: 100%;
   min-height: 600px;
   max-height: 756px;
+  background-size: cover;
   display:flex;
   position:relative;
   flex-direction:column;
-  justify-content:space-between;
-  /* background-color: #F2F2F2; */
-  /* justify-items: stretch; */
- 
+  justify-content:stretch;
+  z-index: -1;
   /* parameters for the header section */
 }
 
 .logo_place_header{
-  height: 31px;
   width:154px;
-  /* position:absolute; */
+  height: 31px;
+  position:absolute;
   top: 30px;
   left: 64px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header__title {
-  /* position:absolute; */
   width: 730px;
-  height:96px;
+  position:absolute;
   left:64px;
+  line-height: 96px;
   font-size: 102px;
   font-weight: bold;
+  align-items: center;
+  margin:0;
+  z-index: 2;
   /*Utiliza flexbox para centrar el elemento verticalmente y la
 propiedad para desplazarlo hacia la derecha.
 Asegúrate de que aparece delante de cualquier imagen o fondo
@@ -46,28 +49,27 @@ en las pantallas más pequeñas.*/
 }
 
 .header__subtitle {
-  /* position: absolute; */
+  position: absolute;
   width: 388px;
-  height:25px;
   left:64px;
+  line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  bottom: 0;
+  z-index: 2;
   
 }
-.header__link{
+/* .header__link{
 text-decoration: none;
 color:#2F80ED ;
 display:block;
-/* position:absolute; */
+position:absolute; */
 
 }
 .header__main-ilustration{
   position: absolute;
-  height:608px;
+  background-size: contain;
   width: 756px;
-  top: 128px;
-  bottom:0;
+  height:608px;
   right:0;
   z-index: 2;
   }
@@ -77,10 +79,10 @@ display:block;
   width: 568px;
   height:568px;
   background-color:#2F80ED;
+  background-size: contain;
   position: absolute;
   top: 64px;
   right:0;
-  bottom:0px;
   z-index: -1;
 }
 
