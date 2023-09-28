@@ -14,13 +14,74 @@
   min-height: 600px;
   max-height: 756px;
   display:flex;
+  position:relative;
+  flex-direction:column;
+  justify-content:space-between;
+  /* background-color: #F2F2F2; */
+  /* justify-items: stretch; */
+ 
   /* parameters for the header section */
 }
 
+.logo_place_header{
+  height: 31px;
+  width:154px;
+  /* position:absolute; */
+  top: 30px;
+  left: 64px;
+  z-index: 1;
+}
+
+.header__title {
+  /* position:absolute; */
+  width: 730px;
+  height:96px;
+  left:64px;
+  font-size: 102px;
+  font-weight: bold;
+  /*Utiliza flexbox para centrar el elemento verticalmente y la
+propiedad para desplazarlo hacia la derecha.
+Asegúrate de que aparece delante de cualquier imagen o fondo
+en las pantallas más pequeñas.*/
+}
+
+.header__subtitle {
+  /* position: absolute; */
+  width: 388px;
+  height:25px;
+  left:64px;
+  font-size: 18px;
+  font-weight: normal;
+  bottom: 0;
+  
+}
+.header__link{
+text-decoration: none;
+color:#2F80ED ;
+display:block;
+/* position:absolute; */
+
+}
+.header__main-ilustration{
+  position: absolute;
+  height:608px;
+  width: 756px;
+  top: 128px;
+  bottom:0;
+  right:0;
+  z-index: 2;
+  }
+
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
-  height: 568px;
   width: 568px;
+  height:568px;
+  background-color:#2F80ED;
+  position: absolute;
+  top: 64px;
+  right:0;
+  bottom:0px;
+  z-index: -1;
 }
 
 /* including elements with key-value modifiers */
