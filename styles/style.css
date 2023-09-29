@@ -13,7 +13,7 @@
   width: 100vw;
   min-height: 600px;
   max-height: 756px;
-  background-size: contain;
+  /* background-size: contain; */
   display:flex;
   /* display: block; */
   position:relative;
@@ -21,7 +21,7 @@
   flex: wrap;
   justify-content:space-between;
   z-index: 0;
-  /* background-color: #F2F2F2; */
+  background-color: #F2F2F2;
   /* parameters for the header section */
 }
 
@@ -42,7 +42,7 @@
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  z-index: 1;
+  z-index: 3;
   /*Utiliza flexbox para centrar el elemento verticalmente y la
 propiedad para desplazarlo hacia la derecha.
 Asegúrate de que aparece delante de cualquier imagen o fondo
@@ -57,7 +57,7 @@ en las pantallas más pequeñas.*/
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  z-index: 1;
+  z-index: 3;
   text-align: left;
 }
 
@@ -69,17 +69,19 @@ left:64px;
 bottom: 0;
 font-size: 18px;
 font-weight: normal;
-z-index: 1;
+z-index: 3;
 text-align: left;
 }
 
-.header__main-ilustration{
-  position: fixed;
-  background-size: contain;
+.header__main-illustration{
+  position: absolute;
+  right: 64px;
+  bottom: 0;
+  /* background-size: contain; */
   width: 756px;
   height:608px;
   /* left:0; */
-  z-index: 0;
+  z-index: 2;
   }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
@@ -87,8 +89,8 @@ text-align: left;
   width: 568px;
   height:568px;
   background-color:#2F80ED;
-  position: fixed;
-  top: 64px;
+  position: absolute;
+  bottom: 64px;
   right:0;
   z-index: -1;
   /* background-size: contain; */
