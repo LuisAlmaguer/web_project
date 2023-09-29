@@ -7,19 +7,21 @@
   margin: 0 auto;
   /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  /* background-color: #F2F2F2; */
-}
+ }
 
 .header {
-  width: 100%;
+  width: 100vw;
   min-height: 600px;
   max-height: 756px;
-  background-size: cover;
+  background-size: contain;
   display:flex;
+  /* display: block; */
   position:relative;
   flex-direction:column;
-  justify-content:stretch;
-  z-index: -1;
+  flex: wrap;
+  justify-content:space-between;
+  z-index: 0;
+  /* background-color: #F2F2F2; */
   /* parameters for the header section */
 }
 
@@ -36,12 +38,11 @@
   width: 730px;
   position:absolute;
   left:64px;
+  align-items: center;  
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  align-items: center;
-  margin:0;
-  z-index: 2;
+  z-index: 1;
   /*Utiliza flexbox para centrar el elemento verticalmente y la
 propiedad para desplazarlo hacia la derecha.
 Asegúrate de que aparece delante de cualquier imagen o fondo
@@ -52,26 +53,33 @@ en las pantallas más pequeñas.*/
   position: absolute;
   width: 388px;
   left:64px;
+  bottom: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  z-index: 2;
-  
+  z-index: 1;
+  text-align: left;
 }
-/* .header__link{
+
+.header__link{
 text-decoration: none;
 color:#2F80ED ;
-display:block;
-position:absolute; */
-
+position:absolute;
+left:64px;
+bottom: 0;
+font-size: 18px;
+font-weight: normal;
+z-index: 1;
+text-align: left;
 }
+
 .header__main-ilustration{
-  position: absolute;
+  position: fixed;
   background-size: contain;
   width: 756px;
   height:608px;
-  right:0;
-  z-index: 2;
+  /* left:0; */
+  z-index: 0;
   }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
@@ -79,11 +87,12 @@ position:absolute; */
   width: 568px;
   height:568px;
   background-color:#2F80ED;
-  background-size: contain;
-  position: absolute;
+  position: fixed;
   top: 64px;
   right:0;
   z-index: -1;
+  /* background-size: contain; */
+
 }
 
 /* including elements with key-value modifiers */
