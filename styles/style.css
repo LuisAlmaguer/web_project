@@ -104,3 +104,11 @@ text-align: left;
   margin-right: 0;
   margin-top: 80px;
 }
+
+.description{
+  padding: 100px 0 ;
+  width: 100vw;
+  min-height: 600px;
+  max-height: 756px;
+  display:flex;
+}
