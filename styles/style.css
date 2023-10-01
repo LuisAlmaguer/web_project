@@ -111,29 +111,29 @@ text-align: left;
   min-height: 600px;
   max-height: 756px;
   display: flex;
-  flex-direction:row;
+  flex-direction:row; 
   justify-content:space-between;
 }
 
 .two-columns{
-  width:80% 
+  display: flex;
+  left: 64px;
+  width:80%
 }
 
 .two-columns_brief{
-  width: 175px;
+  width: 20%;
   line-height: 1.2px;
   font-size: 18px;
   font-weight: normal;
   color:#2F80ED ;
-  display: flex;
-  align-content:center ;
 }
 
 .two-columns_main-text{
   width: 80%;
   min-width: 784px;
   display: flex;
-  flex-direction:column;
+  flex-direction:column; 
   justify-content:space-between;
 }
 
