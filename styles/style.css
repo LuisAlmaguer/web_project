@@ -117,10 +117,12 @@ text-align: left;
   position: relative;
   align-items: center;
   text-align:left;
+  flex-wrap: wrap;
+  text-wrap: wrap;
 }
 
 .two-columns{
-  display: flex;
+  /* display: flex; */
   padding-left: 64px;
   width: 100vw;
 }
@@ -159,12 +161,15 @@ text-align: left;
 }
 
 .digits{
-  padding: 100px 40px auto;
+  padding: 100px auto;
   width: 100vw;
   display: flex; 
   flex-direction: column;
-  justify-content:stretch;
+  justify-content:space-between;
   align-items: center;
+  text-align: center;
+  position: relative;
+  flex-wrap: wrap;
   /* align-content: center; */
 
 }
@@ -174,8 +179,7 @@ width: 60%;
 line-height: 1.15;
 font-size: 60px;
 font-weight: bold;
-display: flex; 
-justify-content:center;
+padding-top: 20px;
 }
 
 .section-subtitle{
@@ -184,28 +188,18 @@ padding-top: 20px;
 line-height: 34px;
 font-size: 24px;
 font-weight: normal;
-display: flex; 
-justify-content:center;
 }
 
 .table{
   padding-top: 60px;
   padding-bottom: 20px;
-  list-style-type: none;
   width: 1100px;
-  display: flex;
   flex-wrap: wrap;
-  justify-content:stretch;
 }
-
-/* .table::nth-child(1n) {
-  padding-bottom: 60px;
-}  */
 
 .table__cell{
   width: 250px;
   height: 20px;
-  list-style-type: none;  
   text-align: left;
 }
 
@@ -222,19 +216,19 @@ justify-content:center;
 }
 
 .table__cell_span::before { 
-  content: '\A \A'; 
+  content: '\A\A'; 
   white-space: pre;
 }
 
-/* .table__cell_heading::before { 
+.table__cell_heading::after { 
+  content: '\A\A'; 
+  white-space: pre;
+}
+
+/* .table__cell_text::after { 
   content: '\A \A'; 
   white-space: pre;
 } */
-
-.table__cell_text::after { 
-  content: '\A \A'; 
-  white-space: pre;
-}
 
 .feynman{
   width: 100vw;
@@ -288,3 +282,42 @@ text-align: center;
   left:0;
   bottom: 0;
 }
+
+.kaufman{
+  overflow: hidden;
+  padding:auto 90px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+
+.table__cell{
+  width: 200px;
+  height: 20px;
+  /* text-align: left; */
+}
+
+.table_theme_dark{
+  background-color: black;
+ color: white;
+ }
+
+.kaufman__triangle{
+  width: 660px;
+  height: 636px;
+  display: flex;
+  position: absolute;
+  right: -124px;
+  z-index: -1;
+}
+
+.table__cell_heading::after { 
+  content: '\A\A'; 
+  white-space: pre;
+}
+
+
