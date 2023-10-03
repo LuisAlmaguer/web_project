@@ -103,7 +103,7 @@ text-align: left;
 }
 
 .description{
-  padding: 100px 0 ;
+  padding: 100px 0;
   padding-left: 64px;
   width: 100vw;
   min-height: 600px;
@@ -210,12 +210,12 @@ font-weight: normal;
 }
 
 .table__cell_span::before { 
-  content: '\A\A'; 
+  content: '\A\A';
   white-space: pre;
 }
 
 .table__cell_heading::after { 
-  content: '\A\A'; 
+  content: '\A\A';
   white-space: pre;
 }
 
@@ -320,7 +320,7 @@ text-align: center;
 }
 
 .table__cell_heading::after { 
-  content: '\A\A'; 
+  content: '\A\A';
   white-space: pre;
 }
 
