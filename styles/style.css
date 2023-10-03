@@ -4,41 +4,36 @@
   /* so here we've set a minimum page width */
   max-width: 1600px;
   /* here we've set a maximum page width */
-  margin: 0 auto;
   /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Neue', Arial, sans-serif;
  }
 
 .header {
+  margin: 0 auto;
   width: 100vw;
   min-height: 600px;
   max-height: 756px;
-  /* background-size: contain; */
   display:flex;
-  /* display: block; */
   position:relative;
   flex-direction:column;
   flex: wrap;
   justify-content:space-between;
   z-index: 0;
-  background-color: #F2F2F2;
+  background-color:#F2F2F2;
   /* parameters for the header section */
 }
 
 .logo_place_header{
   width:154px;
   height: 31px;
-  position:absolute;
-  top: 30px;
-  left: 64px;
   z-index: 2;
+  padding-left: 64px;
 }
 
 .header__title {
+  padding-left: 64px;
   width: 730px;
-  position:absolute;
-  left:64px;
-  align-items: center;  
+  align-items: center;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
@@ -50,27 +45,28 @@ en las pantallas más pequeñas.*/
 }
 
 .header__subtitle {
-  position: absolute;
+  padding-left: 64px;
   width: 388px;
-  left:64px;
-  bottom: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   z-index: 3;
-  text-align: left;
+  text-align: justify;
+  padding-bottom: 30px;
 }
 
 .header__link{
 text-decoration: none;
-color:#2F80ED ;
-position:absolute;
-left:64px;
-bottom: 0;
+color:#2F80ED;
 font-size: 18px;
 font-weight: normal;
 z-index: 3;
 text-align: left;
+}
+
+.header__link::before { 
+  content: '\A';
+  white-space: pre;
 }
 
 .header__main-illustration{
@@ -111,20 +107,17 @@ text-align: left;
   width: 100vw;
   min-height: 600px;
   max-height: 756px;
-  display: flex;
-  flex-direction:row; 
-  justify-content:space-between;
-  position: relative;
-  align-items: center;
-  text-align:left;
-  flex-wrap: wrap;
-  text-wrap: wrap;
 }
 
 .two-columns{
-  /* display: flex; */
+  width: 80%;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  text-align:left;
   padding-left: 64px;
-  width: 100vw;
+  min-width: 784px;
+  text-wrap: wrap;
 }
 
 .two-columns_brief{
@@ -132,14 +125,15 @@ text-align: left;
   line-height: 1.2px;
   font-size: 18px;
   font-weight: normal;
-  color:#2F80ED ;
+  color:#2F80ED;
+  align-self:normal;
 }
 
 .two-columns_main-text{
   width: 80%;
   min-width: 784px;
   display: flex;
-  flex-direction:column; 
+  flex-direction:column;
   justify-content:space-between;
 }
 
