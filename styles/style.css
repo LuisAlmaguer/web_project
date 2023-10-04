@@ -1,5 +1,5 @@
 .page {
-  margin: 0 auto;
+  margin: 0;
   min-width: 1100px;
   /* we don't know how to make mobile versions of websites yet, */
   /* so here we've set a minimum page width */
@@ -265,8 +265,6 @@ font-weight: normal;
 
 .kaufman{
   margin:90px auto;
-  padding: 0;
-  border: 0;
   height: auto;
   width: 100vw;
   overflow: hidden;
