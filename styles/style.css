@@ -285,13 +285,17 @@ font-weight: normal;
   text-align: left;
   margin-top: 60px;
   list-style: none;
-  margin-bottom: 90px;
+  margin-bottom: 10px;
 }
 
 .table__cell{
   width: 200px;
   height: auto;
   /* text-align: left; */
+}
+
+.table__cell:nth-child(5n) {
+  margin-bottom: 80px;
 }
 
 .section-title_theme_dark{
@@ -325,18 +329,6 @@ font-weight: normal;
   color: white;
 }
 
-.footer{
-  width: 100vw;
-  min-height: 350px;
-  background: black;
-}
-
-.columns__theme_dark{
-  background-color: black;
-  color: white;
-  padding-top: 60px;
-}
-
 .kaufman__triangle{
   width: 660px;
   height: 636px;
@@ -346,45 +338,49 @@ font-weight: normal;
   z-index: -2;
 }
 
-
+.footer{
+  width: 100vw;
+  min-height: 350px;
+  background: black;
+  flex-direction: row;
+  align-items: center;
+  align-content: left;
+}
 
 .columns{
 width: 90%;
 display: flex;
-flex-direction:row;
 justify-content:space-between;
-align-items: stretch;
+}
+
+.columns__theme_dark{
+  background-color: black;
+  color: white;
+  padding: 60px 64px 40px;
 }
 
 .column__content_copyright{
 flex-basis: 711px;
 display: flex;
 flex-direction:column;
-/* flex: wrap; */
 justify-content:space-between;
-position: relative;
 }
 
 .column__content_about{
   display: flex;
   flex-direction:column;
-  justify-content:stretch;
+  text-align: left;
 }
 
 .column__content_social{
   display: flex;
   flex-direction:column;
-  justify-content:stretch;
-  align-items: end;
-  text-align: right;
+  text-align: left;
 }
 
 .logo_place_footer{
-  width:154px;
-  height: 31px;
-  position:absolute;
-  top: 30px;
-  left: 64px;
+  width:183px;
+  height: 35px;
   z-index: 2;
 }
 
@@ -392,9 +388,6 @@ position: relative;
 line-height: 25px;
 font-size: 18px;
 font-weight: normal;
-position:absolute;
-bottom: 30px;
-left: 64px;
 margin:0;
 }
 
@@ -402,7 +395,8 @@ margin:0;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .list{
@@ -410,6 +404,7 @@ margin:0;
   font-size: 18px;
   font-weight: normal;
   list-style: none;
+  text-align: left;
 }
 
 .column-link{
