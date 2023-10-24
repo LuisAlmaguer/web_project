@@ -1,0 +1,13 @@
+.header__title {
+    margin-left: 64px;
+    width: 730px;
+    align-items: center;
+    line-height: 96px;
+    font-size: 102px;
+    font-weight: bold;
+    z-index: 3;
+    /*Utiliza flexbox para centrar el elemento verticalmente y la
+  propiedad para desplazarlo hacia la derecha.
+  Asegúrate de que aparece delante de cualquier imagen o fondo
+  en las pantallas más pequeñas.*/
+  }

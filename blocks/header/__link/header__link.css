@@ -1,0 +1,13 @@
+.header__link{
+    text-decoration: none;
+    color:#2F80ED;
+    font-size: 18px;
+    font-weight: normal;
+    z-index: 3;
+    text-align: left;
+    }
+
+.header__link::before { 
+    content: '\A';
+    white-space: pre;
+    }

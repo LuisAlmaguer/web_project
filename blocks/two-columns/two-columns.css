@@ -1,0 +1,7 @@
+.two-columns{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction:row;
+    column-gap: 60px;
+    }
