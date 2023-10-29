@@ -1,0 +1,9 @@
+.digits{
+    margin: 100px auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+  }
