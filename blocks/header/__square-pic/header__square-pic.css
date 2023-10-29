@@ -6,6 +6,10 @@
     top: 32px;
     right:0;
     z-index: -1;
+    transform: rotate(-15deg);
     overflow: hidden;
+    animation: rotacion linear 20s infinite;
+    /* animation-duration: 20s; */
+
     /* background-size: contain; */
   }

@@ -9,5 +9,6 @@
     justify-content:space-between;
     z-index: 0;
     background-color:#F2F2F2;
+    overflow: hidden;
     /* parameters for the header section */
   }
