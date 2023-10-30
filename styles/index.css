@@ -45,10 +45,10 @@
 @import url(/blocks/footer/__author/author.css);
 @import url(/blocks/footer/__column-heading/footer__column-heading.css);
 @import url(/blocks/footer/__column-link/footer__column-link.css);
-@import url(/blocks/footer/__column-content/footer__column-content.css);
-@import url(/blocks/footer/__column-content/footer__column-content_copyright.css);
-@import url(/blocks/footer/__column-content/footer__column-content_about.css);
-@import url(/blocks/footer/__column-content/footer__column-content_social.css);
+@import url(/blocks/footer/__column-content/footer__column_content.css);
+@import url(/blocks/footer/__column-content/footer__column_content-copyright.css);
+@import url(/blocks/footer/__column-content/footer__column_content-about.css);
+@import url(/blocks/footer/__column-content/footer__column_content-social.css);
 @import url(/blocks/footer/__columns/footer__columns.css);
 @import url(/blocks/footer/__columns/footer__columns_theme_dark.css);
 @import url(/blocks/footer/__list/footer__list.css);
