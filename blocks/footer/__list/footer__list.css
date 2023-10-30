@@ -3,4 +3,7 @@
     font-size: 18px;
     font-weight: normal;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:column;
   }
