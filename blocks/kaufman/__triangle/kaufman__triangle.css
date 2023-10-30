@@ -5,4 +5,6 @@
     position: absolute;
     right: -124px;
     z-index: -2;
+    overflow: hidden;
+    animation: rotacion linear 20s infinite;
   }

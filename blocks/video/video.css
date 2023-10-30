@@ -1,5 +1,8 @@
 .video{
-    margin: 100px auto;
+    position: relative;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
     width: 100vw;
     display: flex;
     justify-content: space-between;
