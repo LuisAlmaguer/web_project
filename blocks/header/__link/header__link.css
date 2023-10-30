@@ -5,9 +5,15 @@
     font-weight: normal;
     z-index: 3;
     text-align: left;
+    opacity: 1;
+    transition: opacity 0.3s ease;
     }
 
 .header__link::before { 
     content: '\A';
     white-space: pre;
     }
+
+.header__link:hover{
+        opacity:0;
+    } 
