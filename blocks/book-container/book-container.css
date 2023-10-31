@@ -1,7 +1,9 @@
 .book-container{
+    height:360px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     overflow: hidden;
     column-gap: 48px;
+    position:relative;
   }
